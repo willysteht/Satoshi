@@ -5,6 +5,12 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.Objects;
 
+/**
+ * A Currency implementation for the crypto environment. One Satoshi is 0.00000001 (1E-8). There is no half of a Satoshi (5E-9 will be scaled up to 1E-8).
+ * {@link RoundingMode} is RoundingMode.HALF_UP.
+ * @author Robin
+ *
+ */
 public final class Satoshi extends Number implements Comparable<Number> {
 
 	private static final long serialVersionUID = 6066539222840486557L;
